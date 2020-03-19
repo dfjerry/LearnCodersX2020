@@ -1,0 +1,65 @@
+<!-- $0.addEventListener (Observer design pattern) -->
+<!-- Design patterns, Observer design pattern  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO list</title>
+</head>
+<body>
+	<input id="new-item" type="text"/>
+	<button id="add-btn" >ADD</button>
+	<ul id="todoList">
+<!-- 		<li>Take shower</li>
+		<li>a walk</li>
+		<li>Go to bed</li> -->
+	</ul>
+	<script type="text/javascript">
+		var stogareKey = 'todoList';
+		var dataString = localStorage.getItem(stogareKey);
+		var htmlList = document.getElementById('todoList');
+		var addBtn = document.getElementById('add-btn');
+		var todoList;
+		//addBtn.onclick = addItem
+		addBtn.addEventListener('click', addItem);
+		htmlList.addEventListener('click', onListClicked);
+		if(dataString){
+			todoList = JSON.parse(dataString);
+		} else {
+			todoList = [];
+		}
+		addBtn.addEventListener('click', function(){
+			console.log('Add button is clicked');
+		});//đây gọi là anonymous function
+		//listeners {'click' : [addItem, ...] };
+
+		function onListClicked(event){
+			var button = event.target;
+			i = parseInt(button.dataset.id);//lay ra id cua button
+			todoList.splice(i, 1);//xoa 1 phan tu o vi tri thu i va ko them phan tu nao
+			render();
+			localStorage.setItem(stogareKey, JSON.stringify(todoList));
+		}
+		function addItem(){
+			//get value of the input
+			var input = document.getElementById('new-item'); // lay gia tri o input
+			var newItem = input.value;//gan gia tri do vao bien item
+			//add to todoList array
+			todoList.push(newItem);
+			//re-render
+			render();
+			//clear input0
+			input.value = '';
+			//store data
+			localStorage.setItem(stogareKey, JSON.stringify(todoList));
+		}
+		function render(){
+
+		var content = todoList.map(function(item, i) {//truyen vao index
+			return '<li>' + item + ' <button data-id="' + i + '">delete</button></li>';// tao index cho cac button
+		});
+		htmlList.innerHTML = content.join('');
+		}
+		render();
+	</script>
+</body>
+</html>

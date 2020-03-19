@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO list</title>
+</head>
+<body>
+	<ul id="todoList">
+<!-- 		<li>Take shower</li>
+		<li>a walk</li>
+		<li>Go to bed</li> -->
+	</ul>
+	<!-- internal javascrip -->
+	<script type="text/javascript">
+		var todoList = [
+			'Take shower',
+			'a walk',
+			'Go to bed'
+		];
+
+		var htmlList = document.getElementById('todoList');//tao htmlList de render vao todoList
+		var content = todoList.map(function(item) {
+			return '<li>' + item + '</li>';
+		});
+		htmlList.innerHTML = content.join('');
+	</script>
+</body>
+</html>
+<!-- viết js ở ngoài developer tools gọi là external javascrip -->

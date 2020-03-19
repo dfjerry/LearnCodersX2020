@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Binding value</h1>
+	<span id="showText"></span> <br/>
+	<input type="text" id="inputText">
+</body>
+<script type="text/javascript">
+	//Lấy value từ input
+	
+	inputText.addEventListener('keyup', showInput);
+	var showText = document.getElementById('showText');
+	function showInput(){
+		var inputText = document.getElementById('inputText');
+		var value = inputText.value;
+		showText.innerHTML = '<span>' + value + '</span>';
+	}
+	//show ra thẻ span
+</script>
+</html>

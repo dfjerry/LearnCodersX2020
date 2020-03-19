@@ -1,0 +1,49 @@
+<!-- change event -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<span>Age: </span>
+	<select id="age-filter">
+		<!-- goi la filter -->
+		<option>20</option>
+		<option>26</option>
+		<option>22</option>
+	</select>
+	<table id="student-table">
+
+	</table>
+	<script type="text/javascript">
+		students = [
+			{name: 'Minh', age: 20},
+			{name: 'Ty', age: 26},
+			{name: 'Tuan', age: 22},
+			{name: 'Loc', age: 26},
+			{name: 'Chinh', age: 22}
+		]
+		var ageFilter = document.getElementById('age-filter');
+		ageFilter.addEventListener('change', onAgeFilterChange);
+		function onAgeFilterChange(){
+			//get current value of the select--lấy giá trị ở trong select mà mình chọn
+			var selectedAge = parseInt(ageFilter.value);//value la gia tri dang dc select, vi nó là dạng string nên phải parserInt
+			//filter the student list by the selected value - lọc ra các giá trị theo value ở trên
+			var filteredStudent = students.filter(function (student) {
+				return student.age === selectedAge;
+
+			})
+			//render
+			render(filteredStudent);
+		}
+		function render(students){
+			var studentTalbe = document.getElementById('student-table');
+			var content = students.map(function(student) {
+				return '<tr>' + '<td>' + student.name + '</td>' + '<td>' + student.age + '</td>' + '</tr>';
+			});
+			studentTalbe.innerHTML = content.join('');
+		}	
+		render(students);
+	</script>
+</body>
+</html>

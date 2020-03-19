@@ -1,0 +1,63 @@
+
+<!-- $0.addEventListener (Observer design pattern) -->
+<!-- Design patterns, Observer design pattern  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO list</title>
+</head>
+<body>
+	<input id="new-item" type="text"/>
+	<button id="add-btn" >ADD</button>
+	<ul id="todoList">
+<!-- 		<li>Take shower</li>
+		<li>a walk</li>
+		<li>Go to bed</li> -->
+	</ul>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript">
+		var url = 'http://localhost:9081/todos';
+		axios.get(url).then(function(response) {
+			var items = response.data;//lấy items là 1 object (là data ) từ url 
+			render(items);//render items ra hien thi len web
+		})
+
+		// parse string o localStorage ra ( chinh la storageKey)
+
+		var addBtn = document.getElementById('add-btn');
+		//addBtn.onclick = addItem; //tại sao ko addItem() --> nếu gọi hàm này ở đây giá trị trả về sẽ là undefined
+		
+
+		addBtn.addEventListener('click', addItem);//addEvent sự kiện, listtenner ng nghe sự kiện, tên sk là click 
+		//addBtn trigger a click event
+		//a click event is trigger
+		//event listenner, hàm addItem sẽ được chạy khi sự kiện đc trigger (sk ở đây là click)
+
+		addBtn.addEventListener('click', function(){
+			console.log('Add button is clicked');
+		});//đây gọi là anonymous function
+		//listeners {'click' : [addItem, ...] };
+
+
+		function addItem(){
+			//get value of the input
+			var input = document.getElementById('new-item'); // lay gia tri o input
+			var newItem = {
+				content: input.value
+			};//gan gia tri do vao bien item
+			//add to todoList array
+			axios.post(url, newItem).then(function() {
+				console.log('item saved'+ item);
+			})
+		}
+		function render(items){
+			var htmlList = document.getElementById('todoList');//tao htmlList de render vao todoList
+		var content = items.map(function(item) {
+			return '<li>' + item.content + '</li>';
+		});
+		htmlList.innerHTML = content.join('');
+		}
+		//render();
+	</script>
+</body>
+</html>

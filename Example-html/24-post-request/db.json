@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Go to school"
+    },
+    {
+      "id": 2,
+      "content": "Go to Codersx"
+    },
+    {
+      "id": 3,
+      "content": "Go to Home"
+    },
+    {
+      "content": "Go to abc",
+      "id": 4
+    },
+    {
+      "content": "Go to boom",
+      "id": 5
+    }
+  ]
+}

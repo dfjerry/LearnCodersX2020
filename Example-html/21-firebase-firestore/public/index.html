@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.11.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.11.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.11.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.11.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.11.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.11.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <input id="new-item" type="text"/>
+    <button id="add-btn" >ADD</button>
+    <ul id="todoList">
+    </ul>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var db = firebase.firestore();
+        db.collection('todos').get().then(function(snap) {
+          render(snap.docs);// dung ham render de render du lieu o snap.docs
+        })
+
+
+    var addBtn = document.getElementById('add-btn');
+    //addBtn.onclick = addItem; //tại sao ko addItem() --> nếu gọi hàm này ở đây giá trị trả về sẽ là undefined
+    var input = document.getElementById('new-item'); // lay gia tri o input
+
+    addBtn.addEventListener('click', addItem);//addEvent sự kiện, listtenner ng nghe sự kiện, tên sk là click 
+    //addBtn trigger a click event
+    //a click event is trigger
+    //event listenner, hàm addItem sẽ được chạy khi sự kiện đc trigger (sk ở đây là click)
+
+    addBtn.addEventListener('click', function(){
+      console.log('Add button is clicked');
+    });//đây gọi là anonymous function
+    //listeners {'click' : [addItem, ...] };
+    input.value = sessionStorage.getItem('draft');//lưu draft khi f5 vẫn lưu ở input
+    input.addEventListener('change', updateSessionStorage);
+    function updateSessionStorage(){
+      sessionStorage.setItem('draft', input.value);//draft la ten key tuy chon thich ghi gi cung dc
+    }
+
+    function addItem(){
+      //get value of the input
+      
+      var newItem = input.value;//gan gia tri do vao bien item
+      //add to todoList array
+      todoList.push(newItem);
+      //re-render
+      render();
+      //clear input
+      input.value = '';
+      //store data
+      localStorage.setItem(stogareKey, JSON.stringify(todoList));
+    }
+    function render(items){
+      var htmlList = document.getElementById('todoList');//tao htmlList de render vao todoList
+    var content = items.map(function(item) {
+      var data = item.data();//{content:  }
+      return '<li>' + data.content + '</li>';
+    });
+    htmlList.innerHTML = content.join('');
+    }
+    //render([]);
+      });
+      
+    </script>
+  </body>
+</html>
