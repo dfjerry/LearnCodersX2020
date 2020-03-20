@@ -1,0 +1,14 @@
+p{
+    font-size: 14px;
+    text-indent: 20px;
+}
+#intro{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+    font-family: sans-serif;
+}
+h1, p, .center{
+    color: coral;
+}

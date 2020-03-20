@@ -1,0 +1,10 @@
+.list-item{
+    color: blue;
+    font-weight: bold;
+    padding: 16px;
+    margin: 16px;
+    background-color: transparent;
+}
+.list-gradient{
+    background: linear-gradient(90deg, darkblue 0%, crimson 25%, cyan 50%, chocolate 100%);
+}
