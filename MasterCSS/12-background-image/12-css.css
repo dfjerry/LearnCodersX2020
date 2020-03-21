@@ -1,0 +1,17 @@
+a:link{
+    color: cornflowerblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+a:visited{
+    color: darkmagenta;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+}
+

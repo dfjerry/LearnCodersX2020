@@ -1,0 +1,10 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+/*    Cot dau tien 70% cot thu 2 30%*/
+
+}
+.header, .footer{
+    grid-column: 1/3;
+/*    bat dau o 1 va ket thuc o 3*/
+}

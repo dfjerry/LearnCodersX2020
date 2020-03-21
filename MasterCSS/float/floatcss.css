@@ -1,0 +1,10 @@
+.sidebar{
+    float: left;
+    width: 20%;
+}
+.container:after{
+    display: block;
+    content: '';
+    clear: both;
+    height: 100px;
+}

@@ -1,0 +1,86 @@
+body{
+    font-family: sans-serif;
+}
+.weekly-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.weekly-item .item-numer{
+    font-size: 20px;
+    margin: 0 8px;
+}
+.weekly-item .item-info{
+    font-size: 16px;
+    flex-grow: 1;
+}
+.weekly-item .item-single{
+    font-size: 13px;
+    color: #cccccc;
+}
+.weekly-item .item-view{
+    font-size: 12px;
+    color: #cccccc;
+}
+.album-cover{
+    display: flex;
+    flex-direction: row;
+}
+.album-avatar{
+    width: 128px;
+    height: 128px;
+    background-color: #cccccc;
+    background-image: url("https://loremflickr.com/128/128");
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+
+}
+.album-avatar .overlay{
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    padding: 0 0 5px 5px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.album-info{
+    padding: 5px 0 0 10px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+.album-info .album-info-name{
+    font-size: 20px;
+}
+.album-info-single{
+    font-size: 16px;
+    color: #cccccc;
+}
+.album-view{
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.album-avatar:hover .overlay{
+    transition: all 0.5s;
+    opacity: 1;
+
+}
+.album-avatar:hover .overlay-hover{
+    opacity: 1;
+    transition: all 0.5s;
+
+    transform: translate(0 0);
+}
+.overlay-hover{
+    position: relative;
+    top: -85px;
+    left: 40px;
+    font-size: 40px;
+    opacity: 0;
+    transform: translate(10px 20px);
+}
+
