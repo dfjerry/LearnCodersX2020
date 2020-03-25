@@ -71,7 +71,8 @@ body{
 }
 .album-avatar:hover .overlay-hover{
     opacity: 1;
-    transition: all 0.5s;
+    transition: width 0.5s;
+    text-shadow: 5px 5px 5px grey;
 
     transform: translate(0 0);
 }
