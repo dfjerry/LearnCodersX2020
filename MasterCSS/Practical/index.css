@@ -1,0 +1,526 @@
+body{
+    background-color: #f5f5f5 !important;
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.header-contact{
+    display: flex;
+    flex-direction: row;
+}
+.telephone-number{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+}
+.showmenu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    border-left: 1px solid rgba(0,0,0,0.1);
+
+}
+#showmenu{
+    position: relative;
+}
+.showmenu a{
+    color: black;
+}
+.menu{
+    position: absolute;
+    display: none;
+    background-color: #FFF;
+    color: black;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+}
+.menu ul li{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+/*show menu*/
+.showmenu:hover .menu{
+    display: block;
+}
+
+/* form */
+.search-room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 35px 25px 35px;
+}
+.room{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.arriaval, .departure, .adults, .children, .check-avai{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    color: #CCC;
+}
+.room p{
+    font-size: 20px;
+}
+.room span{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.arriaval, .departure, .adults, .children{
+    border-bottom: 3px solid #E5E5E5;
+}
+.arriaval input, .departure input{
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+.adults select, .children select{
+    border:none;
+    padding: 10px;
+}
+/*.room-fontawe:after{*/
+/*    font-family: 'FontAwesome';*/
+/*    content: "\f073";*/
+/*    position: absolute;*/
+/*    color: black;*/
+/*    right: 22px;*/
+/*    top: 12px;*/
+/*    z-index: 10;*/
+/*}*/
+.check-avai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-avai button{
+    background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 11px 27px 0 rgba(154, 49, 188, 0.33);
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.check-avai button:hover{
+    color: #FFF;
+    opacity: 0.9;
+    transition: 500ms;
+}
+.arriaval, .departure{
+    position: relative;
+}
+#date1, #date2{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+}
+.welcome p{
+    text-align: center;
+}
+#leaf{
+    margin-top: 50px;
+    color: #cccccc;
+}
+.welcome h2{
+    font-weight: bold;
+}
+/*introduce*/
+#intro{
+    padding: 30px 80px 30px 80px;
+    border-bottom: 1px solid #cccccc;
+}
+.introduce{
+    display: flex;
+
+}
+.introduce i{
+    font-size: 45px;
+    color: #a27ca9;
+}
+.introduce-right{
+    margin-left: 20px;
+}
+.introduce-right a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.introduce-right a:hover{
+    color: #a27ca9;
+    text-decoration: none;
+    transition: 500ms;
+}
+.introduce-right p{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+#gallery{
+    background-color: white !important;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 0 50px 0;
+}
+/*coconut*/
+.coconut{
+    padding: 80px 100px 80px 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f8;
+    position: relative;
+}
+.grove-right{
+    flex-basis: 300px;
+}
+.grove-left{
+    flex-grow: 1;
+}
+.grove-left h3{
+    margin-top: 50px;
+    font-weight: bold;
+}
+.grove-left img{
+    width: 600.66px;
+    height: 442.99px;
+    /*transition: transform 1000ms;*/
+    transition: all 0.5s ease;
+}
+.grove-right img{
+    width: 285.33px;
+    height: 206.49px;
+    transition: all 0.5s ease;
+}
+.grove-right .grove-img{
+    margin-top: 30px;
+}
+.viewall{
+    margin-top: 70px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.viewall a{
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+    height: 40px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.viewall a:hover{
+    text-decoration: none;
+    color: black;
+}
+.viewall:hover{
+    background-color: #F5F5FF;
+}
+.grove-left i{
+    position: absolute;
+    color: black;
+    left: 50px;
+    top: 300px;
+    font-size: 30px;
+}
+.grove-right i{
+    position: absolute;
+    color: black;
+    right: 50px;
+    top: 300px;
+    font-size: 30px;
+}
+.grove-left img:hover{
+    transform: scale(1.2);
+}
+.grove-right img:hover{
+    transform: scale(1.2);
+}
+
+
+/*priceless*/
+
+#priceless{
+    background-color: #fafafa;
+    padding: 100px 0 50px 0;
+}
+.priceless{
+    display: flex;
+}
+.price-content{
+    padding: 50px 100px 50px 30px;
+}
+.price-content h1{
+    font-weight: bold;
+}
+.price-content a{
+    color: #5AD2D4;
+}
+.price-content a:hover{
+    text-decoration: none;
+}
+.price-video{
+    width: 555px;
+    height: 505px;
+    background-image: url("https://demo.kallyas.net/greekhotel/wp-content/uploads/sites/73/2017/04/bar.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+.price-video i{
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    left: 240px;
+    bottom: 220px;
+}
+
+
+/*promotion*/
+.promotion{
+    background-color: white;
+    padding: 100px 0 50px 0;
+}
+.promotion-content{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.promotion-content h3{
+    font-weight: bold;
+}
+.promotion-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.scooter{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.scooter img{
+    width: 346.66px;
+    height: 321px;
+    display: flex;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+.scooter img:hover{
+    opacity: 0.8;
+}
+.scooter span{
+    font-size: 19px;
+    font-weight: bold;
+}
+.scooter p{
+    margin-top: 30px;
+}
+
+
+/*gunter*/
+.gunter{
+    background-image: url("https://demo.kallyas.net/greekhotel/wp-content/uploads/sites/73/2017/04/wideheader.jpg");
+    background-repeat: no-repeat;
+    background-position: -100px 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 250px 150px 250px;
+    text-align: center;
+    color: white;
+}
+#gunter{
+    color: black;
+    background-image:url(https://demo.kallyas.net/greekhotel/wp-content/uploads/sites/73/2017/04/texture.jpg);
+    background-repeat:repeat;
+    background-position:center center;
+    background-size:auto;
+    background-attachment:fixed
+}
+.gunter a{
+    color: black;
+    font-weight: bold;
+}
+.gunter a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*services*/
+
+.services{
+    text-align: center;
+    padding: 50px 0 50px 0;
+    background-color: white;
+}
+.services h2{
+    font-weight: bold;
+}
+.services-icon-children{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.services-icon-children i{
+    font-size: 65px;
+    color: #7f82f0;
+    margin-bottom: 20px;
+}
+.services-icon-children span{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*map*/
+#map{
+    width: 100%;
+    height: 500px;
+}
+
+/*services form*/
+.services-form{
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+}
+.services-form h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.services-form-contact{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.services-form-submit{
+    flex-basis: 750px;
+}
+.services-form-contact{
+    display: flex;
+}
+.services-form-contact-chil{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.services-form-contact-children1{
+    flex-basis: 20px;
+}
+.services-form-contact-children1 i{
+    margin: 0 20px 15px 10px;
+    color: #7f82f0;
+}
+.services-form-contact-children2{
+    flex-grow: 1;
+}
+.services-form-contact-children2 span{
+    font-weight: bold;
+}
+.services-form-contact-children2 p{
+    margin-top: 15px;
+}
+
+.services-form-submit-button button{
+    background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    height: 50px;
+    border: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 5px;
+    box-shadow: 0 11px 27px 0 rgba(154, 49, 188, 0.33);
+}
+.services-form-submit-name{
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+.services-form-submit-name input{
+    padding: 26px 16px 6px;
+    width: 49%;
+    border-radius: 5px;
+    border:none;
+}
+
+#submid-name{
+    float: right;
+}
+.services-form-submit-message{
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+.services-form-submit-message textarea{
+    padding: 26px 16px 6px;
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    border:none;
+}
+#spanname{
+     position: absolute;
+    left: 5px;
+ }
+#spanemail{
+    position: absolute;
+    left: 390px;
+}
+#spanmessage{
+    position: absolute;
+    left: 5px;
+}
+.services-form-submit span{
+    color: #969696;
+    font-size: 13px;
+}
+
+
+/*instagram*/
+.instagram{
+    background-color: #f7f7f8;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.instagram img{
+    text-align: center;
+}
+.instagram p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.instagram a{
+    color: #7f82f0;
+}
+.instagram .row .col-md-2{
+    padding: 0;
+    height: 200px;
+    transition: all 0.5s;
+}
+.instagram .row .col-md-2:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}

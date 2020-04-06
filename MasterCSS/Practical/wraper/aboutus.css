@@ -1,0 +1,47 @@
+
+.tamnhin h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.tamnhin p{
+    text-align: justify;
+}
+.tamnhin{
+    line-height: 30px;
+}
+.giatricotloi h1{
+    text-align: center;
+}
+.aboutus-text p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.item p{
+    text-align: center;
+    margin-top: 30px;
+}
+section .aboutStrategy{
+    background-color: #cccccc;
+}
+.aboutStrategy h2{
+    text-align: center;
+}
+.text{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.left img{
+    max-width: 100%;
+}
+.right{
+    line-height: 27px;
+    padding: 30px;
+}
+.contact2{
+    text-align: center;
+    padding: 30px;
+}
+
