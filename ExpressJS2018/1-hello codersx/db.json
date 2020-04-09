@@ -19,12 +19,9 @@
     {
       "name": "tuanntth1906027@fpt.edu.vn",
       "phone": "0969677264",
-      "id": "dhdMMezmR"
-    },
-    {
-      "name": "Student1906027",
-      "phone": "32132132",
-      "id": "RhSPtPA5d"
+      "id": "dhdMMezmR",
+      "email": "tuanntth1906027@fpt.edu.vn",
+      "password": "123456"
     }
   ]
 }

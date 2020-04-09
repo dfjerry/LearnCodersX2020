@@ -1,8 +1,12 @@
 //req query
 var express = require('express');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 
 var userRouter = require('./routers/user.route');
+var authRouter = require('./routers/auth.route');
+
+var authMiddleware = require('./middlewares/auth.middleware');
 
 var port = 3000;
 
@@ -13,7 +17,9 @@ app.set('views', './views');
 
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(cookieParser());
 app.use(express.static('public'));
+
 // app.get('/', function(req, res) {	
 // 	res.send('<h1>codersx 2020</h1>');
 // });//gửi 1 get request, get lay du lieu hien thi len trinh duyet
@@ -26,8 +32,10 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.use('/users', userRouter);
 
+
+app.use('/users', authMiddleware.requireAuth, userRouter);
+app.use('/auth', authRouter);
 app.listen(port, function(){
 	console.log("Server listening on port" + port);
 });

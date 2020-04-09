@@ -17,6 +17,7 @@ module.exports.search = function(req,res) {
 };
 
 module.exports.create = function(req,res) {//render
+	console.log(req.cookies)
 	res.render('users/create');
 };
 
@@ -30,20 +31,7 @@ module.exports.get = function(req, res) {
 
 module.exports.postCreate = function(req,res) {// shortid, lay du lieu ng dung nhap cho vao db
 	req.body.id = shortid.generate();
-	var errors = [];
-	if (!req.body.name) {
-		errors.push('Name is required.');
-	}
-	if (!req.body.phone) {
-		errors.push('Phone is required.');
-	}
-	if (errors.length) {
-		res.render('users/create', {//neu co loi render them va bao loi (render ra errors)
-			errors: errors,
-			values: req.body
-		});
-		return;
-	}
+	
 
 	db.get('users').push(req.body).write();
 	res.redirect('/users');//sau khi post dung redirect quay ve users
