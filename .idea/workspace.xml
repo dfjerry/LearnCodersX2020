@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3d9d560-aa92-4382-9849-f4c9fcb559a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LearnCodersX2020.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/1-demo-layout/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MasterCSS/Assigmment3/ass3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MasterCSS/Assigmment3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example-html/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example-html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example-html/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Git/1-demo" beforeDir="false" afterPath="$PROJECT_DIR$/Git/1-demo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Git/1-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Git/1-demo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterCSS/25-demo-zingmp3/Zingmp3-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/MasterCSS/25-demo-zingmp3/Zingmp3-css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterCSS/25-demo-zingmp3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MasterCSS/25-demo-zingmp3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterCSS/35-transform/35css.css" beforeDir="false" afterPath="$PROJECT_DIR$/MasterCSS/35-transform/35css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterCSS/Practical/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/MasterCSS/Practical/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MasterCSS/Practical/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MasterCSS/Practical/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,13 +35,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LearnCodersX2020\MasterCSS\Practical\javascrip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\LearnCodersX2020\MasterCSS\Practical\javascrip" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +74,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585126526711</updated>
-      <workItem from="1585126527910" duration="1999000" />
+      <workItem from="1585126527910" duration="10767000" />
+      <workItem from="1585215864571" duration="12626000" />
+      <workItem from="1586182439370" duration="3076000" />
+      <workItem from="1586584508018" duration="389000" />
+      <workItem from="1586592512589" duration="78000" />
+      <workItem from="1586861102599" duration="475000" />
+      <workItem from="1586861743363" duration="600000" />
+      <workItem from="1587035292054" duration="3261000" />
+      <workItem from="1587038646326" duration="1598000" />
     </task>
     <servers />
   </component>
@@ -80,7 +94,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

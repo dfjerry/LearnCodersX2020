@@ -17,29 +17,33 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="logo col-sm-2 col-md-2">
-                    <img src="https://demo.kallyas.net/greekhotel/wp-content/uploads/sites/73/2017/04/greekhotel-logo.png" class="rounded">
-                </div>
-                <div class="col-md-7 col-sm-0"></div>
-                <div class="header-contact col-md-3 col-sm-10">
+
+                    <div class="logo col-sm-2 col-md-2">
+                        <img src="https://demo.kallyas.net/greekhotel/wp-content/uploads/sites/73/2017/04/greekhotel-logo.png" class="rounded">
+                    </div>
+                    <div class="col-md-7 col-sm-0"></div>
+                    <div class="header-contact col-md-3 col-sm-10">
                         <div class="telephone-number col-md-8">
                             <i class="fas fa-phone-alt"></i>
                             <span>+9696-77-264</span>
                         </div>
                         <div class="showmenu col-md-4">
-                            <a href="#" id="showmenu"><i  class="fas fa-align-justify"></i></a>
-                            <div class="menu">
+                            <label for="menuState"><span id="showmenu"><i  class="fas fa-align-justify"></i></span></label>
+                            <input type="checkbox" id="menuState" name="menuState">
+                            <div id="menu">
+                                <label id="menu-close" for="menuState"><i class="fas fa-times"></i></label>
                                 <ul>
-                                    <li>Home</li>
-                                    <li>Rooms</li>
-                                    <li>Searchrooms</li>
-                                    <li>Account</li>
-                                    <li>Cart</li>
-                                    <li>Checkout</li>
+                                    <li><a style="color: #7f82f0;" href="#">Home</a></li>
+                                    <li><a href="#">Rooms</a></li>
+                                    <li><a href="#">Searchrooms</a></li>
+                                    <li><a href="#">Account</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
                                 </ul>
                             </div>
                         </div>
-                </div>
+                    </div>
+
             </div>
         </div>
 
@@ -339,6 +343,37 @@
                 <img class="col-md-2" src="https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/16583185_253465398442151_6187232236241158144_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=mToia5OkrNoAX83lf-a&oh=274129c0ff66bb6b5a5ce05b1b811844&oe=5EA5E479"/>
                 <img class="col-md-2" src="https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/16464581_382458722125817_5434873821339320320_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=6Jz1U8GWwgEAX_qisPm&oh=d2e5fe323f15901e258278e2a7640bc4&oe=5EA79367"/>
                 <img class="col-md-2" src="https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/16465100_1850201941889954_8652312515163717632_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=G4AuV93sihsAX_VbOky&oh=27e620f20c786b90448e99e95f06d822&oe=5EA74577" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#"><b>Home</b></a></li>
+                            <li><a href="#">Room</a></li>
+                            <li><a href="#">Search room</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                    <p><b>Follow us:</b></p>
+                    <div class="footer-menu-icon">
+                        <ul>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fas fa-envelope-open"></i></li>
+                            <li><i class="fas fa-phone-volume"></i></li>
+                        </ul>
+                    </div>
+                    <p id="footer-p">Copyright © 2016 Kallyas | Hogash.com <br>
+                        This Demo is part of Kallyas Theme. All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
