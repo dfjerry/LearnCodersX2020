@@ -18,10 +18,11 @@
 </ul>
 <span>Link website: </span>
 https://mastercssdemo.web.app/<br>
+
 ## Installation
-
+```bash
 DownLoad or Clone Source from github to your computer
-
+```
 ## Usage
 
 ```python
@@ -32,5 +33,6 @@ import foobar
 ```
 ## License
 tuantuna955@gmail.com
+<br>
 Coders-x CSS-Boostrap Project 1
 
